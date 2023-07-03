@@ -1,0 +1,656 @@
+（timer4 会导致莫名其妙无法启动与崩溃）
+
+赋予.树【顶】以*树。
+
+赋予树页文件【顶】、树页文件2【顶】以
+	‘配置目录’/tree.html、
+	‘配置目录’/tree.js。
+赋予‘.树’页文件【顶】、‘.树’页文件2【顶】以
+	‘配置目录’/tree2‘-h2-’.html、
+	‘配置目录’/tree2‘-h2-’.js。
+定义树保存【顶】、前缀以下代码
+	赋予标识以‘前缀’树。
+	赋予x、y以
+		document.body.scrollLeft、
+		document.body.scrollTop。
+	-页、‘标识’、-插脚2、[htm__(id__('list')),‘x’,‘y’]、下代码
+		管道堵调用‘echo’、‘参数1’、上代码““‘‘标识’页文件’””下代码。
+		管道堵调用‘echo’、上代码‘x’下代码=‘参数2’;上代码‘y’下代码=‘参数3’;、上代码““‘‘标识’页文件2’””下代码。
+	上代码。
+上代码。
+
+定义点树【顶】、id、upid、插件、文件、选项、名以下代码
+	如果‘-h2-tree’那么显参。
+	打开/分叉‘插件’先
+		src“源码”。
+		vte“终端”。
+		‘插件’
+	了、‘文件’、分叉‘插件’先
+		vte先“-目录、“‘选项’””了。
+		‘选项’
+	了、“-可关闭、-切、-之后、-id、”先树id转‘id’了
+	先如果‘upid’那么“、-上id、”树id转‘upid’了
+	如果‘名’那么“、-名、“‘名’””。
+上代码。
+
+定义树id转【顶】、id以下代码
+	分叉‘id’先
+		list、list2“0”。
+		调用‘串截取’、‘id’、1
+	了
+上代码。
+
+赋予树已备【顶】、‘.树’已备【顶】、树脚【顶】、树脚2【顶】以。
+如果不存在‘.树’脚【顶】那么赋予‘.树’脚【顶】、‘.树’脚2【顶】以。
+
+定义树内容【顶】、标识以下代码
+	下原样<style>
+body {font-size:14px;}
+ul {margin-left:-20px;}
+li {list-style-type:none; white-space:nowrap; }
+.a_1, .a_x, .a_g {border-style:dotted; border-width:1px; padding:0 6px; text-decoration:none;}
+.sp {height:1px; width:60px;}
+.sp2 {height:14px; border:1px solid #00f;}
+#curr {background-color:#0f0;color:#000;}
+.curr2 {background-color:#00f;color:#fff;}
+.vte {background-color:#090;}
+</style>
+<script>
+function id__(id){
+	return document.getElementById(id);
+}
+function q_s_a__(s){
+	return document.querySelectorAll(s);
+}
+function htm__(e,val, op){
+	if(e){
+		if(val==undefined)
+			return e.innerHTML;
+		switch(op) {
+		case true:
+			e.innerHTML += val;
+			return;
+		case "top":
+			e.innerHTML = val + e.innerHTML;
+			return;
+		}
+		e.innerHTML=val;
+	}
+}
+function new__(tag){
+	return document.createElement(tag);
+}
+function new_txt__(txt){
+	return document.createTextNode(txt);
+}
+function add__(e,e2){
+	if(e2)
+		e2.appendChild(e); 
+}
+function ins__(e,e2,i){
+	if(e2){
+		if(i==undefined)
+			e2.parentNode.insertBefore(e,e2); 
+		else{
+			e2.insertBefore(e,e2.childNodes[i]); 
+		}
+	}
+}
+function del__(e){
+	if(e)
+		e.parentNode.removeChild(e); 
+}
+function attr__(e,name,val){
+	if(e){
+		var attrs=e.attributes;
+		if(attrs){
+			var attr=attrs[name];
+			if(attr){
+				if(val==undefined)
+					return attr.nodeValue;
+				attr.nodeValue=val;
+			} else {
+				if(val==undefined)
+					return e.getAttribute(name);
+				e.setAttribute(name,val);
+			}
+		}
+	}
+}
+
+function to__(id) {
+	z$("-id、" + id.substring(1) + "、-切");
+}
+function open__(id) {
+	var e2 = id__(id + 't');
+	var ds = e2.dataset;
+	var n = ds.n;
+	var b = false;
+	for(var i in ds) {
+		if(b) {
+			n = ds[i];
+			break;
+		}
+		if(ds[i] == "-名")
+			b = true;
+	}
+	var e3 = e2.parentNode;
+	var upid = e3.id;
+	switch(upid) {
+		case "list": case "list2":
+			upid = "";
+			break;
+	}
+	z$("点树" + id + "、" + upid + "、“" + ds.p + "”、“" + (ds.a1 ? ds.a1 : "") + "”、“" + (ds.p2 ? ds.p2 : "") + "”、“" + (n ? n : "") + "”");
+}
+function zhe__(id) {
+	var s = id__(id).style;
+	var b = s.display != "none";
+	s.display = b ? "none" : "block";
+	htm__(id__(id + "b"), b ? "+" : "-");
+	z$("调用‘口’、“-勉、-id2、" + id.substring(1) + "、-叠、" + b + "”");
+}
+function tree_add__(title, name, id1, upid1, star, p, p1, p2, ins0, zhe) {
+	var id = z$1('调用‘口’、“-试、-id、' + id1 + '”');
+	if(id == '0') return;
+	var id = 'i' + id1, upid = 'i' + upid1;
+	var id_t = id + 't';
+	var e3 = id__(id_t), tag;
+	if(!e3 && name) {
+		var a = q_s_a__('[data-n="' + name + '"]');
+		if(a.length > 0)
+			e3 = a[0];
+	}
+	if(e3) {
+		tag = id__(e3.id.substring(0, e3.id.length - 1) + 'a');
+	}
+	if(!e3) {
+		var e = new__('ul');
+		e.id = id;
+		if(zhe) {
+			e.style.display = "none";
+		}
+
+		e3 = new__('li');
+		e3.id = id_t;
+
+		tag = new__('a');
+		tag.id = id + 'a';
+		tag.href = 'javascript:' + (p ? 'open' : 'to') + '__("' + id + '")';
+
+		var d = new__('span');
+		d.id = id + 'd';
+上原样分叉‘标识’先
+		树下原样
+		tree_add_b__(d, '...', 'ooo__("' + id1 + '")', 'a_g', null, '展开');
+上原样。
+		‘.树’下原样
+		var can_x = z$1('调用‘口’、“-id、' + id1 + '、-得可关闭”');
+		switch(can_x) {
+		case undefined: case '0': break;
+		default:
+			tree_add_b__(d, 'x', 'tree_rm2__("' + id1 + '")', 'a_x');
+			tree_add_b__(d, 'X', 'tree_rm2__("' + id1 + '",true)', 'a_x');
+			break;
+		}
+上原样。
+了下原样
+		if(p)
+			tree_add_sp__("p", e3);
+		tree_add_b__(e3, zhe ? '+' : '-', 'zhe__("' + id + '")', 'a_1', id + 'b');
+		add__(new_txt__(' '), e3);
+		add__(tag, e3);
+		add__(new_txt__(' '), e3);
+		add__(d, e3);
+		if(p)
+			tree_add_sp__("n", e3);
+
+		add__(new_txt__('\n'), e);
+
+		var e2 = id__(upid);
+		var ins = true;
+		if(!e2)
+			e2 = id__(p ? 'list' : 'list2');
+		if(/*!upid1 &&*/ !ins0)
+			ins = false;
+		if(ins) {
+			ins__(e3, e2, 0);
+			ins__(e, e2, 1);
+		} else {
+			add__(e3, e2);
+			add__(e, e2);
+		}
+
+		if(p)
+			draggable__(tag);
+	}
+	if(p) {
+		var ds = e3.dataset;
+		if(name) ds.n = name;
+		ds.p = p;
+		if(p1) ds.a1 = p1;
+		if(p2) ds.p2 = p2;
+	}
+	htm__(tag, title);
+	if(star && q_s_a__('#' + id_t + ' .curr2').length == 0) {
+		var e2 = new__('span');
+		e2.className = 'curr2';
+		switch(p) {
+			case "终端": e2.classList.add('vte'); break;
+		}
+		htm__(e2, "<span onclick='del__(this.parentNode)'>★</span>");
+		ins__(e2, tag);
+	}
+}
+function tree_add_b__(e3, t, fn, cls, id, ti) {
+	var b = new__('a');
+	if(id) b.id = id;
+	if(cls) b.className = cls;
+	b.innerText = t;
+	b.href = 'javascript:' + fn;
+	if(ti) b.title = ti;
+	add__(b, e3);
+}
+function tree_add_sp__(n, e3) {
+	var sp = new__('div');
+	sp.className = 'sp';
+	sp.dataset.id = e3.id.substring(0, e3.id.length - 1) + 'a';
+	draggable__(sp, n);
+	add__(sp, e3);
+}
+function tree_rm__(id, all) {
+	curr9__(id, true);
+	var e = id__(id);
+	if(!e) return;
+	if(!all) {
+		var e2 = e.parentNode;
+		var a = e.childNodes;
+		for(var i = 0; i<a.length; i++) {
+			var e3 = a[i].cloneNode(true);
+			e2.insertBefore(e3, e);
+			if(i % 2 == 1 && e3.id) {
+				z$('调用‘口’、“-勉、-id、先树id转'+ e3.id + '了、-上id、树id转' + e2.id + '”');
+			}
+		}
+	}
+	del__(e);
+	del__(id__(id + 't'));
+}
+function dragstart__(ev) {
+	ev.dataTransfer.setData("text/plain", ev.target.id);
+}
+function dragover__(ev) {
+	ev.preventDefault();
+}
+function sp_dragenter__(thiz) {
+	thiz.classList.add('sp2');
+}
+function sp_dragleave__(thiz) {
+	thiz.classList.remove('sp2');
+}
+function drop__(ev, by) {
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	var id;
+	if(data == "tmp-1") {
+		var a = id__('tmp-2').childNodes;
+		if(a.length <= 1)
+			return;
+		var e6 = id__('tmp-3');
+		htm__(e6, parseInt(htm__(e6)) - 1);
+		id = a[1].id;
+	} else
+		id = data.substring(0, data.length - 1);
+	var e3 = ev.target, id3, id4,  upid;
+	switch(by) {
+	case 'p': case 'n':
+		sp_dragleave__(e3);
+		id3 = e3.dataset.id;
+		break;
+	default:
+		id3 = e3.id;
+		break;
+	}
+	if(data == id3)
+		return;
+	if(id3 == "tmp-1") {
+		id4 = id3;
+		upid = id3 = 'tmp-2';
+		var e6 = id__('tmp-3');
+		htm__(e6, parseInt(htm__(e6)) + 1);
+	} else {
+		id4 = id3 = id3.substring(0, id3.length - 1);
+	}
+	var e = id__(id);
+	var e5 = e.cloneNode(true);
+	var e5t = id__(id + "t").cloneNode(true);
+	tree_rm__(id, true);
+	switch(by) {
+	case 'p': case 'n':
+		e = id__(id3 + 't');
+		var ins = true;
+		if(by == 'n') {
+			var e2 = e.nextSibling;
+			for(;;) {
+				if(e2) {
+					e2 = e2.nextSibling;
+					if(e2 && !e2.tagName)
+						e2 = e2.nextSibling;
+					if(e2) {
+						e = e2;
+						break;
+					}
+				}
+				e = e.parentNode;
+				ins = false;
+				break;
+			}
+		}
+		if(ins) {
+			id4 = e.id;
+			ins__(e5t, e);
+			ins__(e5, e);
+		} else {
+			id4 = e.nextSibling.id;
+			add__(e5t, e);
+			add__(e5, e);
+		}
+		id4 = id4.substring(0, id4.length - 1);
+		upid = e5t.parentNode.id;
+		break;
+	default:
+		e = id__(id3);
+		if(!e) {
+			upid = id4 = id3 = "list";
+			e = id__(id3);
+		}
+		ins__(e5t, e, 0);
+		ins__(e5, e, 1);
+		break;
+	}
+	上原样分叉‘标识’先
+		‘.树’先
+			下代码
+				z$('
+				赋予已id以树id转' + id + '。
+				赋予上id以树id转' + upid + '。
+				赋予标id以树id转' + id4 + '。
+				赋予代码以“-id、‘已id’、-页组移、‘标id’、‘上id’、' + by + '”。
+				如果‘-h2-tree’那么显示“' + id3 + '”制表符‘代码’换行。
+				调用‘口’、“-勉、”‘代码’');
+			上代码
+		了。
+	了下原样
+	ev.dataTransfer.clearData();
+}
+function draggable__(em, by) {
+	switch(by) {
+	case 'p': case 'n':
+		attr__(em, "ondragenter", "sp_dragenter__(this)");
+		attr__(em, "ondragleave", "sp_dragleave__(this)");
+		break;
+	default:
+		em.draggable = true;
+		attr__(em, "ondragstart", "dragstart__(event)");
+		break;
+	}
+	attr__(em, "ondragover", "dragover__(event)");
+	attr__(em, "ondrop", "drop__(event" + (by ? ",'" + by + "'" : "") + ")");
+}
+function title__(id1, h, ti) {
+	var e = id__('i' + id1 + 'a');
+	if(e) {
+		if(h) htm__(e, h);
+		if(ti) e.title = ti;
+	}
+}
+function ooo_add__(t, ti, fn, cls, id, op) {
+	if(ti)
+		ti = " title='" + ti + "'";
+	else
+		ti = "";
+	htm__(id__(id), "<a href='javascript:" + fn + "' class=a_" + cls + ti + ">" + t + "</a> ", op);
+}
+function ooo__(id1) {
+	var id;
+	if(id1[0] == 'i') {
+		id = id1;
+		id1 = id1.substring(1);
+	} else
+		id = 'i' + id1;
+	id += 'd';
+	ooo_add__('I', '收起', 'min2__("' + id1 + '")', 'g', id);
+	ooo_add__('x', '', 'tree_rm2__("' + id1 + '")', 'x', id, true);
+	ooo_add__('X', '剪枝', 'tree_rm2__("' + id1 + '",true)', 'x', id, true);
+	ooo_add__('F', '固定', 'fixed__("i' + id1 + '")', 'g', id, true);
+}
+function min2__(id1) {
+	ooo_add__('..', '展开', 'ooo__("' + id1 + '")', 'g', 'i' + id1 + 'd');
+}
+function fixed__(id) {
+	htm__(id__(id + 'd'), '');
+}
+上原样分叉‘标识’先
+		‘.树’下原样
+function forid1__(e, ret) {
+	var s = e.id;
+	if(s) {
+		var i = s.length - 1;
+		if(s[i] == 't')
+			ret.push(s.substring(1, i));
+	}
+	var a = e.children;
+	if(a) {
+		for(var i = 0; i < a.length; i++) {
+			forid1__(a[i], ret);
+		}
+	}
+}
+function tree_rm3__(id1) {
+	if(z$1('调用‘口’、“-试、-id、'+ id1 + '、-关闭”') == '0')
+		tree_rm__('i' + id1);
+}
+function tree_rm2__(id1, all) {
+	if(all) {
+		var a = new Array();
+		forid1__(id__('i' + id1), a);
+		for(var i = a.length; --i >= 0;) {
+			tree_rm3__(a[i]);
+		}
+	}
+	tree_rm3__(id1);
+}
+</script>
+上原样。
+		树下原样
+function tree_rm2__(id1, all) {
+	tree_rm__('i' + id1, all);
+}
+function rm__(id, ab) {tree_rm__(id);}
+function rmtree__(id) {tree_rm__(id, true);}
+function min__(id) {min2__(id.substring(1));}
+function show_curr__(to) {
+	var id = 'i' + z$1('调用‘口’、“-簿、主、-得id”') + 't';
+	var e3 = id__(id);
+	if(!e3) return;
+	var e = e3.parentNode;
+	if(e.id == 'bar') return;
+	for(var e2 = e;;) {
+		e2 = e2.parentNode;
+		if(!e2) break;
+		var s = e2.style;
+		if(s && s.display == "none")
+			zhe__(e2.id);
+	}
+	switch(to) {
+	case true: case false:
+		e3.scrollIntoView(to);
+		break;
+	default:
+		e3.scrollIntoViewIfNeeded();
+		break;
+	}
+}
+</script>
+<div id=bar style="position:fixed; top:25%; left:0px; background-color:#fff;
+	border-style: solid solid solid none; border-width:1px; padding:16px 9px 9px 0px; border-color:#ccc;
+	text-align:right; border-radius:0px 50px 20px 0px;">
+	<input type=button value=见 onclick=show_curr__()><br>
+	<input type=button value=见 onclick=show_curr__(true)><br>
+	<input type=button value=见 onclick=show_curr__(false)><br>
+	<span id=tmp-1 title="拖进拖出" style="color:blue">中转<span id=tmp-3>0</span></span>
+	<span style="display:none"><span id=tmp-2></span></span>
+</div>
+上原样。
+	了“<style>.list{text-indent:”分叉‘标识’先
+		树“16”。
+		“-20”
+	了“px;}</style><ul id=list class=list>”先如果调用‘exist’、‘‘标识’页文件’那么调用‘type’、‘‘标识’页文件’了下原样</ul>
+	<ul id=list2 class=list></ul><span id=bar2></span><script>
+var curr_;
+function curr9__(id, save) {
+	if(save) {
+		if(curr_==id){
+			curr_=null;
+			id = 'bar2';
+		} else return;
+	} else {
+		curr_=id;
+		id += 'a';
+	}
+	var e = id__('curr');
+	if(!e) {
+		e = new__('span');
+		e.id = 'curr';
+		htm__(e, '★');
+	}
+	var e2 = id__(id);
+	if(e2)
+		ins__(e, e2);
+	else
+		setTimeout(function() {ins__(e, id__(id));}, 20);
+}
+draggable__(id__('tmp-1'));
+</script>上原样“<span><script>”先如果调用‘exist’、‘‘标识’页文件2’那么调用‘type’、‘‘标识’页文件2’了
+‘‘标识’脚’‘‘标识’脚2’</script></span>先
+		赋予‘标识’已备【顶】以1。
+	了
+上代码。
+
+定义树插【顶】、脚、标识、号以下代码
+	如果‘-h2-tree’那么显参。
+	如果‘‘标识’已备’那么
+		调用‘口’、“-页、‘标识’、-插脚、下原样‘脚’上原样”
+	否则
+		赋予‘标识’脚‘号’【顶】以‘‘标识’脚‘号’’换行‘脚’。
+上代码。
+
+定义树标签【顶】、点、有、标签、标签提示以下代码
+	别名id以点。
+	赋予脚以title__(‘id’
+		分叉‘有’先
+			“1”、“3”先,'先如果‘标签’等于“”那么‘无标题’否则换码‘标签’了'了。
+			“2”,null。
+			“2”、“3”先,'先换码‘标签提示’了'了。
+		了
+	);。
+	树插‘脚’、‘.树’。
+	树插‘脚’、树。
+上代码。
+
+定义树添枝【顶】、id、标题以下代码
+	赋予簿、名、插件、upid、叠以调用‘口’、“-id、‘id’、-在簿、-得名、-得插件、-得上id、-得叠”。
+	赋予星以0。
+	如果‘-h2-tree’那么显参‘簿’、‘名’、‘插件’、‘upid’。
+	分叉‘簿’先
+		主赋予星以1。
+	了。
+	赋予名、标题以
+		先换码‘名’、z了、
+		先换码‘标题’了。
+	赋予参1、参2以调用‘口’、“-得参1、-得参2”。
+	分叉‘插件’先
+		网页赋予参2以。
+	了。
+	赋予参1、参2以
+		先换码‘参1’、z了、
+		先换码‘参2’、z了。
+
+	树插tree_add__('‘标题’', '‘名’', ‘id’, ‘upid’分叉‘簿’先
+		主先, ‘星’, '‘插件’', '‘参1’', '‘参2’', 如果‘‘.树’已备’那么1否则先0了, ‘叠’了。
+	了);、‘.树’。
+
+	分叉‘簿’先
+		主先了。
+		先
+			如果‘-h2-tree’那么显示非主换行。
+			返回
+		了
+	了。
+	树插tree_add__('‘标题’', '‘名’', ‘id’, ‘upid’, ‘星’, '‘插件’', '‘参1’', '‘参2’', 如果‘树已备’那么1否则先0了, ‘叠’);、树。
+上代码。
+
+定义得簿主id【顶】【无参】以下代码
+	如果‘树已备’那么先
+		分叉‘插件’先
+			终端先
+				如果存在文件【上】【上】那么
+					别名文件以文件【上】【上】
+				否则返回。
+			了。
+		了
+		圈子先
+			定义断、部1以下代码
+				赋予串以“-页、树、-页得id、[data-‘部1’="‘文件’"]”。
+				如果‘-h2-tree’那么显参‘串’。
+				赋予id【上】以调用‘口’、‘串’。
+				如果‘id’那么遁出。
+			上代码。
+			断n。
+			断a1。
+			返回。
+		了。
+		“、“-id”、”调用‘串截取’、‘id’、1、-1。
+	了。
+上代码。
+
+-开回调、下代码
+	形参起id、标题、旧、。
+	圈子先
+		如果‘旧’那么先
+			如果‘-h2-tree’那么显示旧换行。
+			遁出
+		了。
+		如果不‘id’那么先
+			如果‘-h2-tree’那么显示无id换行。
+			遁出
+		了。
+		树添枝‘id’、‘标题’。
+	了。
+上代码、
+-关回调、下代码
+	形参起id、当前、旧、。
+	圈子先
+		赋予脚以“tree_rm__('i‘id’');”。
+		树插‘脚’、‘.树’。
+		如果‘旧’那么先
+			如果‘-h2-tree’那么显示旧换行。
+			遁出
+		了。
+		树插‘脚’、树。
+	了。
+上代码、
+-回调+、下代码
+	分叉‘事’先
+		切换先
+			形参2起id、簿、。
+			分叉‘簿’先
+				主先
+					赋予脚以“curr9__('i‘id’');”。
+					树插‘脚’、‘.树’、2。
+					树插‘脚’、树、2。
+				了。
+			了。
+		了
+	了。
+上代码。

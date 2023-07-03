@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=start
+Name[zh_CN]=启动
+Exec=sh -c '`dirname %k`/ui'
+Icon=application-x-executable
+Type=Application
+Terminal=false
+StartupNotify=false

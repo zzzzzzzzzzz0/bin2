@@ -1,0 +1,32 @@
+模块“工具三库”。
+函数集“‘参数0’.so”。
+
+函数“新建队列”以“new_queue__”、“&”。
+函数“入队列”以“queue_push__”、“-&-c*”。
+函数“出队列”以“queue_pop__”、“-A-&”。
+函数“顶入队列”以“queue_push_front__”、“-&-c*”。
+函数“底出队列”以“queue_pop_back__”、“-A-&”。
+函数“释放队列”以“delete_queue__”、“-&”。
+
+函数“新建列表”以“new_list__”、“&”。
+函数“释放列表”以“delete_list__”、“-&”。
+函数“列表删行”以“list_delete__”、“-&-iu-i”。
+函数“清空列表”以“clear_list__”、“-&”。
+函数“列表长度”以“list_length__”、“i-&-i”（、行。0为整个表，其他为为求指定行长度）。
+函数“入列表”以“list_add__”、“-&-i-Z”（、列数、……）。
+函数“入列表由切割”以“list_add_by_split__”、“-&-i-c*-c*-Z”（、列数、源、分隔符（、c* 控制。n忽略空））。
+函数“遍历列表”        以“rust_list_foreach__”、“-E-$:-i:0-i:0-&-c*”（、code）。
+函数“遍历列表带序号”  以“rust_list_foreach__”、“-E-$:-i:1-i:0-&-c*”。
+函数“逆遍历列表”      以“rust_list_foreach__”、“-E-$:-i:0-i:1-&-c*”。
+函数“逆遍历列表带序号”以“rust_list_foreach__”、“-E-$:-i:1-i:1-&-c*”。
+函数“遍历多列表”        以“rust_list_foreach2__”、“-E-$:-i:0-i:0-c*-Z”（code、……）。
+函数“遍历多列表带序号”  以“rust_list_foreach2__”、“-E-$:-i:1-i:0-c*-Z”。
+函数“逆遍历多列表”      以“rust_list_foreach2__”、“-E-$:-i:0-i:1-c*-Z”。
+函数“逆遍历多列表带序号”以“rust_list_foreach2__”、“-E-$:-i:1-i:1-c*-Z”。
+函数“得列表单元”以“rust_list_get__”、“-E-$:add-&-Z”（、行,列、……）。
+函数“设列表单元”以“list_set__”、“-E-&-c*-c*”。
+函数“列表查找”以“list_find__”、“-B-&-c*-i”（、、i_only。0为不限制列，结果返回如“1,1”否则如“1”）。
+函数“排序列表”以“sort_list__”、“-&-i-i-Z”（、根据列、类型。0顺序，1逆序，2顺序且index先，3逆序且index先）。
+函数“得列表行”以“list_col__”、“-&-&-iu”。
+函数“排序列表行”以“sort_list_col__”、“-&-i”。
+函数“整张列表”以“rust_list_to_1__”、“-$:A-&-Z”（、……头（特殊：- 列空填，-- 留界框））。
