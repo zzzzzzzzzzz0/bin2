@@ -301,7 +301,7 @@ function drop__(ev, by) {
 		id = a[1].id;
 	} else
 		id = data.substring(0, data.length - 1);
-	var e3 = ev.target, id3, id4,  upid;
+	var e3 = ev.target, id3, id4, upid;
 	switch(by) {
 	case 'p': case 'n':
 		sp_dragleave__(e3);
@@ -315,7 +315,7 @@ function drop__(ev, by) {
 		return;
 	if(id3 == "tmp-1") {
 		id4 = id3;
-		upid = id3 = 'tmp-2';
+		id3 = 'tmp-2';
 		var e6 = id__('tmp-3');
 		htm__(e6, parseInt(htm__(e6)) + 1);
 	} else {
@@ -361,9 +361,10 @@ function drop__(ev, by) {
 	default:
 		e = id__(id3);
 		if(!e) {
-			upid = id4 = id3 = "list";
+			id4 = id3 = "list";
 			e = id__(id3);
 		}
+		upid = id4;
 		ins__(e5t, e, 0);
 		ins__(e5, e, 1);
 		break;
@@ -501,6 +502,7 @@ function show_curr__(to) {
 	<span id=tmp-1 title="拖进拖出" style="color:blue">中转<span id=tmp-3>0</span></span>
 	<span style="display:none"><span id=tmp-2></span></span>
 </div>
+<script>draggable__(id__('tmp-1'));</script>
 上原样。
 	了“<style>.list{text-indent:”分叉‘标识’先
 		树“16”。
@@ -530,7 +532,6 @@ function curr9__(id, save) {
 	else
 		setTimeout(function() {ins__(e, id__(id));}, 20);
 }
-draggable__(id__('tmp-1'));
 </script>上原样“<span><script>”先如果调用‘exist’、‘‘标识’页文件2’那么调用‘type’、‘‘标识’页文件2’了
 ‘‘标识’脚’‘‘标识’脚2’</script></span>先
 		赋予‘标识’已备【顶】以1。
