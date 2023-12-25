@@ -232,15 +232,33 @@ function tree_add__(title, name, id1, upid1, star, p, p1, p2, ins0, zhe) {
 		if(p2) ds.p2 = p2;
 	}
 	htm__(tag, title);
-	if(star && q_s_a__('#' + id_t + ' .curr2').length == 0) {
-		var e2 = new__('span');
-		e2.className = 'curr2';
-		switch(p) {
-			case "终端": e2.classList.add('vte'); break;
+	if(star) {
+		//q_s_a__('#' + id_t + ' .curr2').length
+		if(!cnt__(e3, 'curr2')) {
+			var e2 = new__('span');
+			e2.className = 'curr2';
+			switch(p) {
+				case "终端": e2.classList.add('vte'); break;
+			}
+			htm__(e2, "<span onclick='del__(this.parentNode)'>★</span>");
+			ins__(e2, tag);
 		}
-		htm__(e2, "<span onclick='del__(this.parentNode)'>★</span>");
-		ins__(e2, tag);
 	}
+}
+function cnt__(e, cn) {
+	var a = e.childNodes, i2 = 0;
+	for(var i = 0; i < a.length; i++) {
+		var e2 = a[i];
+		var cn2 = e2.className;
+		if(cn2) {
+			var i3 = cn2.indexOf(cn);
+			//z$('显示“'+cn+' '+cn2+' '+i3+'”换行');
+			if(i3 >= 0)
+				i2++;
+		}
+		i2 += cnt__(e2, cn);
+	}
+	return i2;
 }
 function tree_add_b__(e3, t, fn, cls, id, ti) {
 	var b = new__('a');
@@ -565,6 +583,7 @@ function curr9__(id, save) {
 	如果‘-h2-tree’那么显参‘簿’、‘名’、‘插件’、‘upid’。
 	分叉‘簿’先
 		主赋予星以1。
+		边1、边2、边3、边4返回。
 	了。
 	赋予名、标题以
 		先换码‘名’、z了、
@@ -644,7 +663,7 @@ function curr9__(id, save) {
 -回调+、下代码
 	分叉‘事’先
 		切换先
-			形参2起id、簿、。
+			形参2起簿、、id、。
 			分叉‘簿’先
 				主先
 					赋予脚以“curr9__('i‘id’');”。

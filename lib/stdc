@@ -21,7 +21,6 @@
 
 函数“删除文件”以“remove”、“n-c*”。
 函数“删除文件二”以“unlink”、“n-c*”。
-函数“删除目录”以“rmdir”、“n-c*”。
 函数“移动文件”以“rename”、“n-c*-c*”（int oldpath, newpath）。
 
 函数  “存在文件”以“access”、“n-c*-i:0”。
@@ -32,7 +31,12 @@
 函数“得输串”以“gets”、“-S”。
 
 函数“得当前目录”以“getcwd”、“-S”。
-函数“改变目录”以“chdir”、“i-c*”。
+函数“建立目录”以“mkdir”、“n-c*-u”。
+函数“改变目录”以“chdir”、“n-c*”。
+函数“删除目录”以“rmdir”、“n-c*”。
+
+函数“得符号链接”以“readlink”、“-c*-S”（path）。
+函数“建符号链接一”以“symlink”、“n-c*-c*”（path2、path）。
 
 函数“休眠”  以“sleep”、“u-l”。
 函数“休眠二”以“usleep”、“i-l”。

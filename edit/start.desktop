@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=start
 Name[zh_CN]=启动
-Exec=sh -c '`dirname %k`/ui'
+Exec=sh -c '`dirname %k`/edit3_zs'
 Icon=application-x-executable
 Type=Application
 Terminal=false

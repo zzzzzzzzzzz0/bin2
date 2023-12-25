@@ -47,6 +47,9 @@ x另有一种逗号用法，x,y,宽,高，后三者为NULL则仅抽取而不使�
 函数“窗置顶”以“wnck_window_make_above”、“-&”。
 函数“窗撤置顶”以“wnck_window_unmake_above”、“-&”。
 函数“窗是置顶”以“wnck_window_is_above”、“i-&”。
+函数“窗置底”以“wnck_window_make_below”、“-&”。
+函数“窗撤置底”以“wnck_window_unmake_below”、“-&”。
+函数“窗是置底”以“wnck_window_is_below”、“i-&”。
 函数“窗总可见”以“wnck_window_stick”、“-&”。
 函数“窗撤总可见”以“wnck_window_unstick”、“-&”。
 函数“窗是总可见”以“wnck_window_is_sticky”、“i-&”。
