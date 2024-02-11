@@ -1,0 +1,3 @@
+“<input size=6 id=t><input type=button value='搜' onclick='z$("开搜下原样"+document.getElementById("t").value+"上原样")'>‘横格’
+<input size=4 id=hh value="1"><input type=button value='跳行' onclick='z$("-簿、主、-光标行列、"+document.getElementById("hh").value+"、1、-焦点")'>‘横格’”
+

@@ -46,7 +46,8 @@
 定义树内容【顶】、标识以下代码
 	下原样<style>
 body {font-size:14px;}
-ul {margin-left:-20px;}
+/*.list{text-indent:0px;}*/
+.list ul {margin-left:-20px;}
 li {list-style-type:none; white-space:nowrap; }
 .a_1, .a_x, .a_g {border-style:dotted; border-width:1px; padding:0 6px; text-decoration:none;}
 .sp {height:1px; width:60px;}
@@ -277,7 +278,6 @@ function tree_add_sp__(n, e3) {
 	add__(sp, e3);
 }
 function tree_rm__(id, all) {
-	curr9__(id, true);
 	var e = id__(id);
 	if(!e) return;
 	if(!all) {
@@ -479,7 +479,6 @@ function tree_rm2__(id1, all) {
 	}
 	tree_rm3__(id1);
 }
-</script>
 上原样。
 		树下原样
 function tree_rm2__(id1, all) {
@@ -488,6 +487,8 @@ function tree_rm2__(id1, all) {
 function rm__(id, ab) {tree_rm__(id);}
 function rmtree__(id) {tree_rm__(id, true);}
 function min__(id) {min2__(id.substring(1));}
+上原样。
+	了下原样
 function show_curr__(to) {
 	var id = 'i' + z$1('调用‘口’、“-簿、主、-得id”') + 't';
 	var e3 = id__(id);
@@ -521,23 +522,11 @@ function show_curr__(to) {
 	<span style="display:none"><span id=tmp-2></span></span>
 </div>
 <script>draggable__(id__('tmp-1'));</script>
-上原样。
-	了“<style>.list{text-indent:”分叉‘标识’先
-		树“16”。
-		“-20”
-	了“px;}</style><ul id=list class=list>”先如果调用‘exist’、‘‘标识’页文件’那么调用‘type’、‘‘标识’页文件’了下原样</ul>
-	<ul id=list2 class=list></ul><span id=bar2></span><script>
-var curr_;
-function curr9__(id, save) {
-	if(save) {
-		if(curr_==id){
-			curr_=null;
-			id = 'bar2';
-		} else return;
-	} else {
-		curr_=id;
-		id += 'a';
-	}
+上原样“<ul id=list class=list>”先如果调用‘exist’、‘‘标识’页文件’那么调用‘type’、‘‘标识’页文件’了下原样</ul>
+	<ul id=list2 class=list></ul><script>
+function curr9__(id1) {
+	var id = 'i' + id1 + 'a';
+
 	var e = id__('curr');
 	if(!e) {
 		e = new__('span');
@@ -547,8 +536,16 @@ function curr9__(id, save) {
 	var e2 = id__(id);
 	if(e2)
 		ins__(e, e2);
-	else
-		setTimeout(function() {ins__(e, id__(id));}, 20);
+	else {
+		z$("树添枝" + id1);
+		setTimeout(function() {
+			e2 = id__(id);
+			title__(id1,
+				z$1("调用‘口’、“-id、" + id1 + "、-得签”"),
+				z$1("调用‘口’、“-id、" + id1 + "、-得签提示”"));
+			ins__(e, e2);
+		}, 100);
+	}
 }
 </script>上原样“<span><script>”先如果调用‘exist’、‘‘标识’页文件2’那么调用‘type’、‘‘标识’页文件2’了
 ‘‘标识’脚’‘‘标识’脚2’</script></span>先
@@ -578,17 +575,18 @@ function curr9__(id, save) {
 上代码。
 
 定义树添枝【顶】、id、标题以下代码
-	赋予簿、名、插件、upid、叠以调用‘口’、“-id、‘id’、-在簿、-得名、-得插件、-得上id、-得叠”。
+	赋予簿、名、插件、upid、叠以调用‘口’、“-勉、-id、‘id’、-在簿、-得名、-得插件、-得上id、-得叠”。
+	如果不‘插件’那么返回。
 	赋予星以0。
 	如果‘-h2-tree’那么显参‘簿’、‘名’、‘插件’、‘upid’。
 	分叉‘簿’先
 		主赋予星以1。
-		边1、边2、边3、边4返回。
+		如果‘簿’头匹配*那么返回。
 	了。
 	赋予名、标题以
 		先换码‘名’、z了、
 		先换码‘标题’了。
-	赋予参1、参2以调用‘口’、“-得参1、-得参2”。
+	赋予参1、参2以调用‘口’、“-id、‘id’、-得参1、-得参2”。
 	分叉‘插件’先
 		网页赋予参2以。
 	了。
@@ -611,7 +609,7 @@ function curr9__(id, save) {
 上代码。
 
 定义得簿主id【顶】【无参】以下代码
-	如果‘树已备’那么先
+	如果‘‘.树’已备’那么先
 		分叉‘插件’先
 			终端先
 				如果存在文件【上】【上】那么
@@ -621,9 +619,10 @@ function curr9__(id, save) {
 		了
 		圈子先
 			定义断、部1以下代码
-				赋予串以“-页、树、-页得id、[data-‘部1’="‘文件’"]”。
+				赋予串以“-页、‘.树’、-页得id、[data-‘部1’="‘文件’"]”。
 				如果‘-h2-tree’那么显参‘串’。
 				赋予id【上】以调用‘口’、‘串’。
+				如果‘-h2-tree’那么显示id=‘id’换行。
 				如果‘id’那么遁出。
 			上代码。
 			断n。
@@ -666,9 +665,9 @@ function curr9__(id, save) {
 			形参2起簿、、id、。
 			分叉‘簿’先
 				主先
-					赋予脚以“curr9__('i‘id’');”。
+					赋予脚以“curr9__('‘id’');”。
 					树插‘脚’、‘.树’、2。
-					树插‘脚’、树、2。
+					（树插‘脚’、树、2。）
 				了。
 			了。
 		了
