@@ -1,4 +1,7 @@
-“<style>input {font-size:12px;}</style>
-<input size=7 id=t><input type=button value='搜' onclick='z$("开搜下原样"+document.getElementById("t").value+"上原样")'>‘横格’
-<input size=4 id=hh value="1"><input type=button value='跳行' onclick='z$("-簿、主、-光标行列、"+document.getElementById("hh").value+"、1、-焦点")'>‘横格’”
+“<style>input,a {font-size:12px;}</style>
+<input size=6 id=t><input type=button value='搜' onclick='z$("开搜下原样"+document.getElementById("t").value+"上原样")'>‘横格’
+<input size=4 id=hh value="1"><input type=button value='跳' onclick='z$("-簿、主、-光标行列、"+document.getElementById("hh").value+"、1、-焦点")'>
+<a href='javascript:var l=z$1("”下代码
+	赋予行以调用‘口’、“-簿、主、-得行列”。‘行’
+上代码“");if(l)document.getElementById("hh").value=l;'>行</a>”
 

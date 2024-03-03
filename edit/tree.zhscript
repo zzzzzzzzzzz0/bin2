@@ -35,7 +35,7 @@
 
 定义树id转【顶】、id以下代码
 	分叉‘id’先
-		list、list2“0”。
+		list、list2、tmp-1、tmp-2、tmp-3“0”。
 		调用‘串截取’、‘id’、1
 	了
 上代码。
