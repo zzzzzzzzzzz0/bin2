@@ -7,7 +7,7 @@
 </style>
 <script>
 function z$(code) {prompt("zhscript-v",code);}
-function z$1(code) {return prompt("zhscript",code);}
+function z$1(code) {return eval(prompt("zhscript",code));}
 function zhezu__(id) {
 	var s = document.getElementById(id).style;
 	var b = s.display == 'none';
@@ -315,6 +315,20 @@ function zhezu__(id) {
 					形参起名、。
 					加链‘名’、“加载‘名’.zhscript。”。
 				上代码、解释‘自块表’。
+				*加组、调试、先
+					调用‘遍历区’、【调试】、下代码
+						形参起类、名、。
+						分叉‘类’先
+							v先
+								调用‘迭代三’、下代码
+									别名1以参数1。
+									赋予2以“赋予‘名’【调试】以‘1’”。
+									加链‘名’:‘1’、‘2’、"‘2’"。
+								上代码、1、1、0。
+							了。
+						了。
+					上代码
+				了、*。
 			了、*。
 		了。
 		关键字先
