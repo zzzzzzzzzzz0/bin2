@@ -39,7 +39,7 @@ x另有一种逗号用法，x,y,宽,高，后三者为NULL则仅抽取而不使�
 函数“窗是激活”以“wnck_window_is_active”、“i-&”。
 函数“窗关闭”以“wnck_window_close”、“-&”。
 函数“窗最大化”以“wnck_window_maximize”、“i-&”。
-函数“窗撤最大化”以“wnck_window_unmaximize”、“i-&”。
+函数“窗撤最大化”以“wnck_window_unmaximize”、“-&”。
 函数“窗是最大化”以“wnck_window_is_maximized”、“i-&”。
 函数“窗最小化”以“wnck_window_minimize”、“-&”。
 函数“窗撤最小化”以“wnck_window_unminimize”、“-&”。
