@@ -1,0 +1,5 @@
+模块“txtotxt库”。
+函数集“‘参数0’.so”。
+
+函数“iconv”     以“rust_iconv__”、“-$:A-c*-i:0-Z”（源（、c*（源编码，默认gb18030）、c*（目标编码，默认utf8）、c*（x|X 输出十六进制）））。
+函数“iconv_file”以“rust_iconv__”、“-$:A-c*-i:1-Z”（源（、c*、c*、c*））。
