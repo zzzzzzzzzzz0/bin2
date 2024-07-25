@@ -1,3 +1,5 @@
+赋予终端共【顶】以。
+
 定义得类型3【顶】、路径以下代码
 	圈子先
 		如果‘路径’头匹配“http://”、“https://”、“ftp://”、“file:”那么
@@ -6,7 +8,8 @@
 		赋予“类型3”【上】以调用‘得文件类型’、‘路径’。
 		如果‘类型3’内包含“Unicode text”、“ASCII text”、“JSON”、“(no magic)”、“empty”那么
 			“源码”遁出。
-		如果‘类型3’内包含“ image data,”那么
+		如果‘类型3’内包含“ image data”、“Audio ”、“ Video”、“ video”、“ movie”、“Media ”、“MPEG”、
+		“Web/P”、“Matroska”、“ASF”、“AVI”、“WebM”、“PDF”那么
 			“网页”遁出。
 		如果‘类型3’内包含“directory”那么
 			“终端”遁出。
