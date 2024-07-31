@@ -2,6 +2,7 @@
 
 函数集“‘参数0’.so”。
 
+函数“加反斜杠”以“rust_addslashes__”、“-$:A-c*-c*”（有C、R（正则表达式）、x三种）。
 函数“断无意义名”以“is_noname__”、“i-c*”。
 函数“多串替换”以“rust_replace__”、“-E-$:-i:0-c*-Z”（src（、c* tag1、c* 代码 / 允许过滤（当tag1空。sp-、0-9、a-z、A-Z、集合）、……））。
 函数“多串更换”以“rust_replace__”、“-E-$:-i:1-c*-Z”。（no_code）
