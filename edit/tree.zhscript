@@ -520,6 +520,8 @@ function show_curr__(to) {
 	<input type=button value=见 onclick=show_curr__(false)><br>
 	<span id=tmp-1 title="拖进拖出" style="color:blue">中转<span id=tmp-3>0</span></span>
 	<span style="display:none"><span id=tmp-2></span></span>
+	<br>
+	<a href="javascript:z$('-刷新')">还原</a>
 </div>
 <script>draggable__(id__('tmp-1'));</script>
 上原样“<ul id=list class=list>”先如果调用‘exist’、‘‘标识’页文件’那么调用‘type’、‘‘标识’页文件’了下原样</ul>
