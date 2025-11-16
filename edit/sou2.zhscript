@@ -1,7 +1,11 @@
-“<style>input,a {font-size:12px;}</style>
-<input size=6 id=t><input type=button value='搜' onclick='z$("开搜下原样"+document.getElementById("t").value+"上原样")'>‘横格’
-<input size=4 id=hh value="1"><input type=button value='跳' onclick='z$("-簿、主、-光标行列、"+document.getElementById("hh").value+"、1、-焦点")'>
+“<style>input,a {font-size:12px;} form {float:left;}</style>
+<form onsubmit='z$("开搜下原样"+t.value+"上原样");return false'>
+<input size=8 name=t><input type=submit value='搜'>
+</form>
+<form onsubmit='z$("-簿、主、-光标行列、"+document.getElementById("hh").value+"、1、-焦点");return false'>
+<input size=4 id=hh name=hh value="1"><input type=submit value='跳'>
 <a href='javascript:var l=z$1("”下代码
 	赋予行以调用‘口’、“-簿、主、-得行列”。‘行’
-上代码“");if(l)document.getElementById("hh").value=l;'>行</a>”
+上代码“");if(l)document.getElementById("hh").value=l;'>行</a>
+</form>”
 

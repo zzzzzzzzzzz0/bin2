@@ -1,5 +1,9 @@
 （timer4 会导致莫名其妙无法启动与崩溃）
 
+赋予树截时【顶】以调用‘fileinfo’、‘参数0’、%tm。
+赋予时以调用‘fileinfo’、‘上文件’、%tm。
+如果‘时’大于‘树截时’那么
+	赋予树截时【顶】以‘时’。
 赋予.树【顶】以*树。
 
 赋予树页文件【顶】、树页文件2【顶】以
@@ -120,7 +124,7 @@ function attr__(e,name,val){
 }
 
 function to__(id) {
-	z$("-id、" + id.substring(1) + "、-切");
+	z$("-id、" + id.substring(1) + "、-激切");
 }
 function open__(id) {
 	var e2 = id__(id + 't');
@@ -232,7 +236,7 @@ function tree_add__(title, name, id1, upid1, star, p, p1, p2, ins0, zhe) {
 		if(p1) ds.a1 = p1;
 		if(p2) ds.p2 = p2;
 	}
-	htm__(tag, title);
+	htm__(tag, title ? title : '上原样‘无标题’下原样');
 	if(star) {
 		//q_s_a__('#' + id_t + ' .curr2').length
 		if(!cnt__(e3, 'curr2')) {
@@ -493,11 +497,10 @@ function show_curr__(to) {
 	var id = 'i' + z$1('调用‘口’、“-簿、主、-得id”') + 't';
 	var e3 = id__(id);
 	if(!e3) return;
-	var e = e3.parentNode;
-	if(e.id == 'bar') return;
-	for(var e2 = e;;) {
+	for(var e2 = e3;;) {
 		e2 = e2.parentNode;
 		if(!e2) break;
+		if(e2.id == 'bar') return;
 		var s = e2.style;
 		if(s && s.display == "none")
 			zhe__(e2.id);
@@ -547,8 +550,8 @@ function curr9__(id1) {
 		setTimeout(function() {
 			e2 = id__(id);
 			title__(id1,
-				z$1("调用‘口’、“-id、" + id1 + "、-得签”"),
-				z$1("调用‘口’、“-id、" + id1 + "、-得签提示”"));
+				z$1("调用‘口’、“-勉、-id、" + id1 + "、-得签”"),
+				z$1("调用‘口’、“-勉、-id、" + id1 + "、-得签提示”"));
 			ins__(e, e2);
 		}, 100);
 	}
@@ -571,7 +574,7 @@ function curr9__(id1) {
 	别名id以点。
 	赋予脚以title__(‘id’
 		分叉‘有’先
-			“1”、“3”先,'先如果‘标签’等于“”那么‘无标题’否则换码‘标签’了'了。
+			“1”、“3”先,'先换码‘标签’了'了。
 			“2”,null。
 			“2”、“3”先,'先换码‘标签提示’了'了。
 		了
@@ -600,8 +603,11 @@ function curr9__(id1) {
 		先换码‘参1’、z了、
 		先换码‘参2’、z了。
 
+	赋予插以如果‘id’大于‘树截时’那么0否则1。
+	赋予插1以如果‘‘.树’已备’那么1否则‘插’。
+	赋予插2以如果‘树已备’那么1否则‘插’。
 	树插tree_add__('‘标题’', '‘名’', ‘id’, ‘upid’分叉‘簿’先
-		主先, ‘星’, '‘插件’', '‘参1’', '‘参2’', 如果‘‘.树’已备’那么1否则先0了, ‘叠’了。
+		主先, ‘星’, '‘插件’', '‘参1’', '‘参2’', ‘插1’, ‘叠’了。
 	了);、‘.树’。
 
 	分叉‘簿’先
@@ -611,7 +617,7 @@ function curr9__(id1) {
 			返回
 		了
 	了。
-	树插tree_add__('‘标题’', '‘名’', ‘id’, ‘upid’, ‘星’, '‘插件’', '‘参1’', '‘参2’', 如果‘树已备’那么1否则先0了, ‘叠’);、树。
+	树插tree_add__('‘标题’', '‘名’', ‘id’, ‘upid’, ‘星’, '‘插件’', '‘参1’', '‘参2’', ‘插2’, ‘叠’);、树。
 上代码。
 
 定义得簿主id【顶】【无参】以下代码

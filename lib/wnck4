@@ -22,6 +22,7 @@
 函数“屏得区”以“wnck_screen_get_workspace”、“&-&-i”。
 函数“屏得激活区”以“wnck_screen_get_active_workspace”、“&-&”。
 函数“屏得近激活窗”以“wnck_screen_get_previously_active_window”、“&-&”。
+函数“屏得窗堆号”以“wnck_screen_get_window_stack_i__”、“i-&-&”。
 函数“窗得”以“wnck_window_get”、“&-lu”。
 函数“窗得名”以“wnck_window_get_name”、“c*-&”。
 函数“窗得xid”以“wnck_window_get_xid”、“lu-&”。
@@ -30,7 +31,6 @@
 函数“窗得类组名”以“wnck_window_get_class_group_name”、“c*-&”。
 函数“窗有图标名”以“wnck_window_has_icon_name”、“i-&”。
 函数“窗得图标名”以“wnck_window_get_icon_name”、“c*-&”。
-函数“屏得窗堆号”以“wnck_screen_get_window_stack_i__”、“i-&-&”。
 
 函数“窗得几何”以“window_get_geometry__”、“-B-&”。
 函数“窗设几何”以“window_set_geometry__”、“-B-&-c*-c*-c*-c*”（窗、x、y、宽、高。
@@ -54,6 +54,7 @@ x另有一种逗号用法，x,y,宽,高，后三者为NULL则仅抽取而不使�
 函数“窗撤总可见”以“wnck_window_unstick”、“-&”。
 函数“窗是总可见”以“wnck_window_is_sticky”、“i-&”。
 函数“窗全屏”以“wnck_window_set_fullscreen”、“-&-i”。
+函数“窗是全屏”以“wnck_window_is_fullscreen”、“i-&”。
 函数“窗设跳过任务栏”以“wnck_window_set_skip_tasklist”、“-&-i”。
 函数“窗是跳过任务栏”以“wnck_window_is_skip_tasklist”、“i-&”。
 函数“窗口垂直向最大化”以“wnck_window_maximize_vertically”、“i-&”。

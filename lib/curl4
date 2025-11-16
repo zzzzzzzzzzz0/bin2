@@ -6,8 +6,9 @@
 函数“curl_easy_cleanup”以、“-&”。
 赋予
 “CURLOPT_URL”、
+“CURLOPT_PROXY”、
 “CURLOPT_HEADER”、
-“CURLOPT_NOBODY”以“10002”、“42”、“44”。
+“CURLOPT_NOBODY”以“10002”、“10004”、“42”、“44”。
 函数“curl_easy_setopt”以、“i-&-i-c*”（handle、opt、param）。
 函数“curl_easy_perform”以、“i-&”。
 

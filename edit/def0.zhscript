@@ -10,7 +10,7 @@
 			“url”遁出。
 		加载“lib/magic4”。
 		赋予“类型3”【上】以调用‘得文件类型’、‘路径’。
-		如果‘类型3’内包含“Unicode text”、“ASCII text”、“JSON”、“(no magic)”、“empty”那么
+		如果‘类型3’内包含“Unicode text”、“ASCII text”、“JSON”、“SVG”、“(no magic)”、“empty”那么
 			“源码”遁出。
 		如果‘类型3’内包含“ image data”、“Audio ”、“ Video”、“ video”、“ movie”、“Media ”、“MPEG”、
 		“Web/P”、“Matroska”、“ASF”、“AVI”、“WebM”、“PDF”那么
@@ -18,4 +18,19 @@
 		如果‘类型3’内包含“directory”那么
 			“终端”遁出。
 	了。
+上代码。
+
+定义修正主义【顶】、路径以下代码
+	调用‘迭代三’、下代码
+		别名“实”以“参数1”。
+		如果‘路径’头匹配‘实’那么先
+			赋予“路径”【上】以‘参数2’调用‘串截取’、‘路径’、“0”、“0”、‘实’。
+			跳出
+		了
+	上代码、“2”、
+	“/zzzzzzzzzzz4/opt2”、“/opt2”、
+	“/zzzzzzzzzzz4/opt5/opt”、“/opt2/opt”、
+	“/zzzzzzzzzzz4/zzzzzzzzzzz/”、“/zzzzzzzzzzz/”、
+	“/zzzzzzzzzzz4/opt/”、“/opt4/”。
+	‘路径’
 上代码。
