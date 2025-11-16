@@ -1,0 +1,24 @@
+模块“文件类型库”、下代码
+	调用‘magic_close【所】’、‘句柄2【所】’。
+	调用‘magic_close【所】’、‘句柄3【所】’。
+	调用‘magic_close【所】’、‘句柄4【所】’。
+上代码。
+函数集“libmagic.so”、“libmagic.so.1”。
+
+函数“magic_open”以、“l-i”。
+函数“magic_load”以、“-l-l:0”。
+函数“magic_close”以、“-l”。
+函数“magic_file”以、“c*-l-c*”。
+
+赋予“句柄2”【私】以调用‘magic_open’、“2”。
+赋予“句柄3”【私】以调用‘magic_open’、“0x10”。
+赋予“句柄4”【私】以调用‘magic_open’、“0x20”。
+
+调用‘magic_load’、‘句柄2’。
+函数“得文件类型”以“magic_file”、“c*-i:‘句柄2’-c*”。
+
+调用‘magic_load’、‘句柄3’。
+函数“得文件类型2”、“get-file-mime”以“magic_file”、“c*-i:‘句柄3’-c*”。
+
+调用‘magic_load’、‘句柄4’。
+函数“得文件所有类型”以“magic_file”、“c*-i:‘句柄4’-c*”。
