@@ -58,6 +58,8 @@ if(!window.xiaomao__)
 	window.xiaomao__=function(e){if(e)return e.lastChild;};
 if(!window.shangji__)
 	window.shangji__=function(e){if(e)return e.parentNode;};
+if(!window.shang__)
+	window.shang__=function(e,s){if(e)return e.closest(s);};
 if(!window.e__)
 	window.e__=
 	function(e){
